@@ -1117,10 +1117,12 @@ p {
     }
 
     .card{
-      width:  360px;
+      width:  340px;
         height: 580px;
          margin-top: 20px;
-         margin-bottom: -1px;
+         margin-bottom:1px;
+         /* margin-top: 15px; */
+         margin: 10 0 0 18px;
          /* border: 2 px solid rgb(255, 0, 111);   */
           /* view-timeline-name: --reveal;
           animation-name: show;
