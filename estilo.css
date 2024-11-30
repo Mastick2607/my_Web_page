@@ -738,7 +738,7 @@ html{
     top: 40%;
     background-color: #252A2E;
     padding: 20px;
-    max-swidth: 350px;
+    max-width: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -1054,16 +1054,16 @@ p {
     
       
     }
-    .card{
+    /* .card{
        width: 465px;
         margin-top: 20px;
        
-    }
-    .portfolio{
+    } */
+    /* .portfolio{
         background-color: #252A2E;
         color: #fff;
         padding: 50px 100px 0 20px;
-    }
+    } */
     
     .skills .fila{
         display: block;
@@ -1102,21 +1102,11 @@ p {
         width: 100%;
     }
 
-    .card{
+    /* .card{
         display: block;
 
-    }
-    
-}
+    } */
 
-@media (min-width: 481px) and (max-width: 720px) {
-    .portfolio{
-        background-color: #252A2E;
-        color: #fff;
-        padding: 50px 100px 0 10px;
-    }
-}
-@media (min-width: 320px) and (max-width: 480px) { 
 
     .portfolio{
         background-color: #252A2E;
@@ -1209,7 +1199,20 @@ p {
         
     }
 
+    
 }
+
+/* @media (min-width: 481px) and (max-width: 720px) {
+    .portfolio{
+        background-color: #252A2E;
+        color: #fff;
+        padding: 50px 100px 0 10px;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px) { 
+
+  
+} */
 
 /* @media (max-width: 480px) {
     .portfolio{
