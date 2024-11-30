@@ -1117,12 +1117,12 @@ p {
     }
 
     .card{
-      width:  320px;
-        height: 540px;
+      width:  310px;
+        height: 485px;
          /* margin-top: 20px; */
          margin-bottom:1px;
          /* margin-top: 15px; */
-         margin: 20px 0 0 8px;
+         margin: 20px 0 0 25px;
          /* border: 2 px solid rgb(255, 0, 111);   */
           /* view-timeline-name: --reveal;
           animation-name: show;
@@ -1139,6 +1139,14 @@ p {
             opacity: 1;scale: 100%;
         }
      } */
+
+     .img-1{
+        width: 315px;
+        height: auto;
+        
+       
+           
+       }
      .proyecto1 {
 
         margin-left: 9px;  
@@ -1146,13 +1154,13 @@ p {
 
 
      .titl-proyect {
-        font-size: 20px;
+        font-size: 18px;
         margin: 0 0 1rem;
         font-family: 'Righteous';
         color: #e71861;
     }
     .descrption{
-        font-size: 20px;
+        font-size: 18px;
         font-family: 'Righteous';
         word-spacing: 0.2rem;
         line-height: 1.2;
@@ -1165,6 +1173,38 @@ p {
         margin-top: -10px;
         margin-bottom: 2rem;
         font-family: 'Righteous';
+    }
+    .tech-node {
+        
+        font-size: 0.7rem;
+      
+    }
+    .tech-TypeScript {
+        
+        font-size: 0.7rem;
+      
+    }
+    .tech-Angular {
+        
+        font-size: 0.7rem;
+      
+    }
+
+    .tech-Tailwind {
+        
+        font-size: 0.7rem;
+      
+    }
+    .tech-Mysql{
+        
+        font-size: 0.7rem;
+      
+    }
+
+    .tech-react{
+        
+        font-size: 0.7rem;
+      
     }
 
     .inicio .contenido-banner h2{
