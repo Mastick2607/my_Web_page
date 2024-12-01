@@ -1536,6 +1536,39 @@ p {
           font-size: 0.7rem;
         
       }
+      .contacto {
+        padding: 50px 19px;
+         
+     }
+ 
+        .contacto .contenido-seccion{
+         width: 360px;
+         margin: auto;
+         
+     }
+     .contacto .col input, .contacto .col textarea{
+        display: block;
+        width: 88%;
+        padding: 18px;
+        border: none;
+        margin-bottom: 20px;
+        background-color: #252A2E;
+        color: #fff;
+        font-size: 18px;
+    }
+
+      .p_contacto  {
+        font-size: 20px;
+        margin-right: 10px;
+   
+        
+    }
+
+    .contacto button {
+        position: relative;
+        left: -20px; /* Mueve el botón hacia la izquierda */
+    }
+    
   }
   
 
