@@ -1223,10 +1223,10 @@ p {
 
     .avion{
        display: none;
-    
-        height: auto;
-        margin-top:55px;
-           filter: invert(16%) sepia(85%) saturate(4292%) hue-rotate(317deg) brightness(90%) contrast(93%);
+     /* width: 0%;  */
+         /* height: auto; */
+        /* margin-top:55px;
+           filter: invert(16%) sepia(85%) saturate(4292%) hue-rotate(317deg) brightness(90%) contrast(93%); */
        
        }
 
@@ -1538,7 +1538,9 @@ p {
       }
       .contacto {
         padding: 50px 19px;
-         
+        overflow: hidden;
+        /* min-height: 100vh; */
+        
      }
  
         .contacto .contenido-seccion{
@@ -1555,20 +1557,49 @@ p {
         background-color: #252A2E;
         color: #fff;
         font-size: 18px;
+        /* border: #0088ff 2px solid; */
+    }
+    .contacto h2{
+        font-size: 48px;
+        font-family: 'Righteous';
+        /* text-align: center; */
+        /* padding: 5px 0; */
+        margin-left: -35px;
+        
     }
 
       .p_contacto  {
         font-size: 20px;
-        margin-right: 10px;
+        margin-right: 15px;
+        /* display: none; */
+        /* border: #109f28 2px solid; */
+        width:325px;
    
         
     }
 
     .contacto button {
         position: relative;
-        left: -20px; /* Mueve el botón hacia la izquierda */
+        left: -20px;
     }
     
+    /* nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 17px;
+    } */
+
+    /* .contenedor-header{
+        background: #1e2326;
+        position: fixed;
+        width: 95%;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    } */
   }
   
 
