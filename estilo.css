@@ -1014,7 +1014,30 @@ p {
 }
 
 /* SECCION RESPONSIVE */
+@media screen and (max-width: 1280px) {
 
+    .card{
+      
+           /* margin: 20px 5px 10 0px; */
+           /* gap: 1.5px; */
+           /* margin-left: 15px; */
+    }
+    .proyectos-container{
+
+  margin-left: -80px;
+  /* border: #109f28 2px solid; */
+    }
+
+    .portfolio h2{
+        margin-top: -22px;
+        margin-bottom: 4px;
+     margin-left: 12px;
+       }
+}
+.proyecto1{
+    margin-right: 17px;
+
+}
 
 @media screen and (max-width:980px){
     nav{
@@ -1746,6 +1769,10 @@ p {
             animation-timeline: --reveal ;
             animation-range: entry 25% cover 50%; */
        } 
+       .portfolio h2{
+        margin-top: -22px;
+     margin-left: 12px;
+       }
        
 
 
@@ -1880,6 +1907,61 @@ p {
         position: relative;
         left: -35px;
     }
+
+
+    
+
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #251e26;
+    max-width: 290px;
+    
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+    margin-top: 80px;
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid #e71861;
+    display: block;
+    width: 60%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenido-banner h1{
+    margin-top: 10px;
+    font-size: 32px;
+    font-family: 'Righteous';
+    color: #e71861;
+    
+}
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'Righteous';
+    display: inline-block;
+    animation: spinText 2s ease-in-out forwards;
+}
+
+
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: flex;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center; 
+    line-height: 42px;
+    /* padding-bottom:-20px; */
+    margin: 15px 110px 45px;
+    font-size: 16px;
+    transition: .3s;
+}
+
   }
 
 
