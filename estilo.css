@@ -278,6 +278,203 @@ html{
 .sobremi button:hover .overlay{
     width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sobremi2{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 19px;
+    margin-top:-16px ;
+}
+.sobremi2 .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+    
+}
+.sobremi2 h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    /* view-timeline-name: --reveal;
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%; */
+
+}
+.sobremi2 .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 15px;
+
+}
+.sobremi2 .contenido-seccion p span{
+    color: #e71861;
+    font-weight: bold;
+}
+.sobremi2 .fila{
+    display: flex;
+
+}
+.sobremi2 .fila .col
+{
+    width: 50%;
+}
+.sobremi2 .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.sobremi2 .fila .col ul{
+    list-style: none;
+}
+.sobremi2 .fila .col ul li{
+    margin: 12px 0;
+    
+}
+.sobremi2 .fila .col ul li strong{
+    display: inline-block;
+    color: #e71861;
+    width: 130px;
+}
+.sobremi2 .fila .col ul li span{
+    background-color: #e71861;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.mylink{
+    /* text-decoration: none;  */
+    color: #ffffff; /* Cambia este valor al color deseado */
+    /* font-weight: bold; */
+}
+.sobremi2 .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi2 .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}.sobremi2 .fila .col .contenedor-intereses .interes:hover{
+    background-color: #1CB698;
+}
+.sobremi2 .fila .col .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sobremi2 button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.sobremi2 button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #e71861;
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi2 button:hover .overlay{
+    width: 100%;
+}
+
+
+
+.sobremi2  strong{
+    
+    color: #e71861;
+    width: 130px;
+    font: 18px;
+    line-height: 2px;
+    /* margin-bottom: 20px; */
+}
+
+.sobremi2  p{
+
+    margin-bottom: 62px;
+}
+
+.sobremi2  h3{
+
+   font-size: 25px;
+}
+
+
+
+.github-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.github-button {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-family: 'Righteous', sans-serif;
+    color: #fff;
+    background-color: #616161;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.github-button i {
+    margin-left: 8px;
+    font-size: 18px;
+}
+
+.github-button:hover {
+    background-color: #e71861;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* SECCION S K I L L S */
 .skills{
     background-color: #252A2E;
@@ -979,6 +1176,35 @@ p {
     gap: 0.5rem; 
 
 }
+
+.tech-laravel{
+  
+    border: 1px solid  #ff2d20;
+    color:#ff2d20;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+
+}
+
+.tech-bootstrap{
+  
+    border: 1px solid  #8011f7;
+    color:#8011f7;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+
+}
+
+
+
 .tech-react{
   
     border: 1px solid  #5ed3f3;
@@ -999,18 +1225,38 @@ p {
 }
 
 .proyectos-container {
-    display: flex;
-    /* flex-wrap: wrap; */
-    /* margin-right: 520px;  */
-    gap: 5px; /* Espacio entre los proyectos */
-    justify-content: space-between; /* Distribución uniforme */
-    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 30px; /* Espacio entre tarjetas */
+    justify-items: center; /* Centra horizontalmente las tarjetas en sus columnas */
+    align-items: center; /* Centra verticalmente las tarjetas en sus filas */
+margin-left: -40px;
 }
-  .proyecto1 {
 
-   margin-left: 10px;  
-   /* border: #109f28 2px solid; */
-   /* margin: 0 0 20 40px; */
+.proyecto1 {
+    margin-right: -110px;  
+    display: contents; /* Asegura que las tarjetas sigan el diseño del grid */
+}
+
+.card:nth-child(4) {
+    grid-column: 2; /* Coloca la cuarta tarjeta en la segunda columna */
+    grid-row: 2; /* Asegura que la tarjeta esté en la segunda fila */
+}
+
+
+/* Contenedor del video */
+.video-container {
+    width: 90%; /* Ajusta el ancho según sea necesario */
+    max-width: 800px; /* Ancho máximo para pantallas grandes */
+    margin: auto;
+}
+
+/* Video responsivo */
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Opcional: bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra */
 }
 
 /* SECCION RESPONSIVE */
@@ -1024,7 +1270,7 @@ p {
     }
     .proyectos-container{
 
-  margin-left: -80px;
+  margin-left: -72px;
   /* border: #109f28 2px solid; */
     }
 
@@ -1069,13 +1315,19 @@ p {
     .sobremi .fila .col{
         width: fit-content;
     }
+
+    .sobremi2 .fila{
+        display: block;
+    }
+    .sobremi2 .fila .col{
+        width: fit-content;
+    }
     .proyectos-container{
         display: block;
     /* background-color: #109f28; */
 
     margin-right: 370px;
     
-      
     }
     /* .card{
        width: 465px;
@@ -1230,6 +1482,20 @@ p {
       
     }
 
+
+    .tech-laravel{
+  
+        font-size: 0.7rem; 
+    
+    }
+    
+    .tech-bootstrap{
+      
+        font-size: 0.7rem;
+    
+    }
+    
+
     .inicio .contenido-banner h2{
         font-size: 17px;
         font-weight: normal;
@@ -1289,8 +1555,7 @@ p {
             animation-timeline: --reveal ;
             animation-range: entry 25% cover 50%; */
        } 
-
-
+   
   
        /* @keyframes show {
           from{
@@ -1313,6 +1578,12 @@ p {
           margin-left: 9px;  
        }
   
+
+       .proyectos-container{
+
+        margin-left: 180px;
+        /* border: #109f28 2px solid; */
+          }
   
        .titl-proyect {
           font-size: 18px;
@@ -1367,9 +1638,21 @@ p {
           font-size: 0.7rem;
         
       }
-  
-}
 
+      
+    .tech-laravel{
+  
+        font-size: 0.7rem; 
+    
+    }
+    
+    .tech-bootstrap{
+      
+        font-size: 0.7rem;
+    
+
+}
+}
   
 @media screen and (max-width: 414px) {
     .card{
@@ -1388,12 +1671,17 @@ p {
        } 
 
 
+       .proyectos-container{
+
+        margin-left: 156px;
+        /* border: #109f28 2px solid; */
+          }
+
        .img-1{
         width: 100%;
         height: auto;
         
-       
-           
+               
        }
    
 
@@ -1451,6 +1739,43 @@ p {
       
     }
 
+    
+    .tech-laravel{
+  
+        font-size: 0.7rem; 
+    
+    }
+    
+    .tech-bootstrap{
+      
+        font-size: 0.7rem;
+    }
+
+
+}
+
+@media  (max-width: 393px) { 
+  
+    .proyectos-container{
+
+        margin-left: 146px;
+        /* border: #109f28 2px solid; */
+          }
+
+
+
+}
+
+
+@media  (max-width: 390px) { 
+  
+    .proyectos-container{
+
+        margin-left: 144px;
+        /* border: #109f28 2px solid; */
+          }
+
+
 
 }
 @media screen and (max-width: 375px) {
@@ -1468,6 +1793,12 @@ p {
             animation-timeline: --reveal ;
             animation-range: entry 25% cover 50%; */
        } 
+
+       .proyectos-container{
+
+        margin-left: 132px;
+        /* border: #109f28 2px solid; */
+          }
 
 
   
@@ -1546,6 +1877,19 @@ p {
           font-size: 0.7rem;
         
       }
+
+
+      .tech-laravel{
+  
+        font-size: 0.7rem; 
+    
+    }
+    
+    .tech-bootstrap{
+      
+        font-size: 0.7rem;
+    }
+      
       .contacto {
         padding: 50px 19px;
         overflow: hidden;
@@ -1610,6 +1954,11 @@ p {
             animation-range: entry 25% cover 50%; */
        } 
 
+       .proyectos-container{
+
+        margin-left: 128px;
+        /* border: #109f28 2px solid; */
+          }
 
   
        /* @keyframes show {
@@ -1687,6 +2036,20 @@ p {
           font-size: 0.7rem;
         
       }
+
+
+      .tech-laravel{
+  
+        font-size: 0.7rem; 
+    
+    }
+    
+    .tech-bootstrap{
+      
+        font-size: 0.7rem;
+    
+
+    }
       .contacto {
         padding: 50px 19px;
         overflow: hidden;
@@ -1775,6 +2138,11 @@ p {
        }
        
 
+       .proyectos-container{
+
+        margin-left: 115px;
+        /* border: #109f28 2px solid; */
+          }
 
   
        /* @keyframes show {
@@ -1861,6 +2229,20 @@ p {
           font-size: 0.7rem;
         
       }
+
+
+
+      
+    .tech-laravel{
+  
+        font-size: 0.7rem; 
+    
+    }
+    
+    .tech-bootstrap{
+      
+        font-size: 0.7rem;
+    }
       .contacto {
         padding: 50px 19px;
         overflow: hidden;
