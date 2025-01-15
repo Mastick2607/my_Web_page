@@ -1259,6 +1259,7 @@ video {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra */
 }
 
+
 /* SECCION RESPONSIVE */
 @media screen and (max-width: 1280px) {
 
@@ -2348,6 +2349,12 @@ video {
 
 
   
+/* @media (max-width: 480px) {
+    .portfolio{
+        background-color: #252A2E;
+        color: #fff;
+        padding: 50px 100px 0 10px;
+    }
 
   
 

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Mc</a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html#inicio" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="index.html#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                <li>
+                  <a href="index.html#curriculum" onclick="seleccionar()">CURRICULUM</a>
+                </li>
+                <li><a href="index.html#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="index.html#skills" onclick="seleccionar()">SKILLS</a></li>
+             
+             
+                <li><a href="index.html#contacto" onclick="seleccionar()">CONTACTO</a></li>
+              </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECCIÓN SOBRE EL PROYECTO CRUD -->
+    <section id="sobremi2" class="sobremi2">
+      <div class="contenido-seccion">
+        <br /><br />
+        <h2>Lista de Tareas (To-Do List) en Laravel</h2>
+        <div class="video-container">
+          <video controls width="640">
+            <source src="https://drive.google.com/uc?export=download&id=1Mlku93M_m0Q198mFe7oQJwrcdYJjP-QN" type="video/mp4" />
+            Tu navegador no soporta la  reproducción de este video.
+          </video>
+        </div>
+
+        <br /><br />
+        <p>
+          Esta aplicación de lista de tareas está desarrollada con <strong>Laravel</strong>,
+          proporcionando funcionalidades CRUD para gestionar tareas: <span>Crear, Leer, Actualizar y Eliminar</span>.
+        </p>
+        <br /><br />
+        <h3>Características Principales</h3>
+        <br />
+        <p>Paginación para facilitar la visualización de tareas.</p>
+        <p>Búsqueda avanzada por título o descripción.</p>
+        <p>Interfaz sencilla para agregar, editar y eliminar tareas.</p>
+
+        <br /><br />
+        <h3>Tecnologías Utilizadas</h3>
+        <br />
+        <p><strong>Backend:</strong> Laravel, MySQL</p>
+        <p><strong>Frontend:</strong> Blade Templates, HTML5, CSS3, Bootstrap</p>
+
+        <br /><br />
+        <h3>Pasos para Instalar</h3>
+        <br />
+        <p><strong>Instalar Dependencias:</strong> Ejecuta <code>composer install</code></p>
+        <p><strong>Configurar .env:</strong> entra al archivo <code>.env</code> y configura la conexión a la base de datos.</p>
+        <p><strong>Migrar Base de Datos:</strong> Usa <code>php artisan migrate</code> para crear las tablas necesarias.</p>
+        <p><strong>Iniciar Servidor:</strong> Levanta el servidor con <code>php artisan serve</code>.</p>
+
+        <br /><br />
+        <h3>Potencial y Usos</h3>
+        <br />
+        <p>
+          Este sistema puede ser utilizado para una amplia variedad de proyectos, desde la gestión personal de tareas hasta la colaboración en equipo, escalando hacia aplicaciones empresariales más complejas.
+        </p>
+
+        <br /><br />
+        <h3>Ventajas</h3>
+        <br />
+        <p><strong>Optimización del tiempo:</strong> Permite a los usuarios organizar y priorizar tareas de manera eficiente, asegurando que nada importante quede sin atender.</p>
+        <p><strong>Colaboración mejorada:</strong> En un entorno empresarial, el sistema puede usarse para asignar tareas específicas a diferentes miembros del equipo, promoviendo una mejor distribución del trabajo.</p>
+        <p><strong>Seguimiento de progreso:</strong> Ofrece una vista clara del estado de las tareas (completadas, en proceso, pendientes), ideal para gestionar proyectos personales o laborales.</p>
+        <p><strong>Facilidad de uso:</strong> Diseño intuitivo que permite a cualquier usuario, sin importar su nivel técnico, interactuar con el sistema sin problemas.</p>
+        <p><strong>Adaptabilidad:</strong> Desde gestionar listas de compras hasta planificar proyectos complejos, el sistema se adapta a diferentes necesidades y contextos.</p>
+        <p><strong>Centralización de información:</strong> Almacena todas las tareas en un solo lugar, eliminando la necesidad de múltiples herramientas o notas dispersas.</p>
+      </div>
+      <div class="github-button-container">
+        <a href="https://github.com/Mastick2607/ToDoList-Laravel.git" target="_blank" class="github-button">
+          Ver en GitHub <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="redes">
+        <a class="redes-footer" href="https://www.linkedin.com/in/marlon-stick-cortes-ñustes-baa47b1b4/"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
