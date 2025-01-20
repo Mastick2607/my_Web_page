@@ -282,11 +282,15 @@
       });
 
       images.forEach((img, index) => {
-        img.addEventListener("click", () => {
-          viewerImage.src = img.src;
-          imageViewer.style.display = "flex";
-        });
-      });
+  // Agregar event listener para "click" y "touchstart"
+  const handleInteraction = () => {
+    viewerImage.src = img.src;
+    imageViewer.style.display = "flex";
+  };
+
+  img.addEventListener("click", handleInteraction); // Para dispositivos de escritorio
+  img.addEventListener("touchstart", handleInteraction); // Para dispositivos táctiles
+});
 
       closeViewer.addEventListener("click", () => {
         imageViewer.style.display = "none";
