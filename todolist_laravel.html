@@ -23,18 +23,31 @@
           <a href="#">Mc</a>
         </div>
         <nav id="nav">
-            <ul>
-                <li><a href="index.html#inicio" onclick="seleccionar()">INICIO</a></li>
-                <li><a href="index.html#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                <li>
-                  <a href="index.html#curriculum" onclick="seleccionar()">CURRICULUM</a>
-                </li>
-                <li><a href="index.html#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                <li><a href="index.html#skills" onclick="seleccionar()">SKILLS</a></li>
-             
-             
-                <li><a href="index.html#contacto" onclick="seleccionar()">CONTACTO</a></li>
-              </ul>
+          <ul>
+            <li>
+              <a href="index.html#inicio" onclick="seleccionar()">INICIO</a>
+            </li>
+            <li>
+              <a href="index.html#portfolio" onclick="seleccionar()"
+                >PORTFOLIO</a
+              >
+            </li>
+            <li>
+              <a href="index.html#curriculum" onclick="seleccionar()"
+                >CURRICULUM</a
+              >
+            </li>
+            <li>
+              <a href="index.html#sobremi" onclick="seleccionar()">SOBRE MI</a>
+            </li>
+            <li>
+              <a href="index.html#skills" onclick="seleccionar()">SKILLS</a>
+            </li>
+
+            <li>
+              <a href="index.html#contacto" onclick="seleccionar()">CONTACTO</a>
+            </li>
+          </ul>
         </nav>
         <div class="nav-responsive" onclick="mostrarOcultarMenu()">
           <i class="fa-solid fa-bars"></i>
@@ -47,17 +60,101 @@
       <div class="contenido-seccion">
         <br /><br />
         <h2>Lista de Tareas (To-Do List) en Laravel</h2>
-        <div class="video-container">
-          <video controls width="640">
-            <source src="https://github.com/user-attachments/assets/30e76c95-5da1-4a3e-a239-7502b98aa3ae" type="video/mp4" />
-            Tu navegador no soporta la  reproducción de este video.
-          </video>
+        <!-- Carrusel de imágenes -->
+        <div class="carousel">
+          <img
+            src="imgTodolist/img1.PNG"
+            title="Tabla de tareas con sus funcionalidades"
+            class="active"
+            alt="Tabla de tareas con sus funcionalidades"
+          />
+          <img
+            src="imgTodolist/img2.PNG"
+            title="Dar clic al botón Crear"
+            alt="Dar clic al botón Crear"
+          />
+          <img
+            src="imgTodolist/img3.PNG"
+            title="Llenar los campos y registrar tarea"
+            alt="Llenar los campos y registrar tarea"
+          />
+          <img
+            src="imgTodolist/img4.PNG"
+            title="Alerta de tarea creada"
+            alt="Alerta de tarea creada"
+          />
+          <img
+            src="imgTodolist/img5.PNG"
+            title="Ver registro nuevo en la tabla"
+            alt="Ver registro nuevo en la tabla"
+          />
+          <img
+            src="imgTodolist/img6.PNG"
+            title="Dar clic al botón Editar"
+            alt="Dar clic al botón Editar"
+          />
+          <img
+            src="imgTodolist/img7.PNG"
+            title="Actualizar los campos requeridos y proceder a actualizar"
+            alt="Actualizar los campos requeridos y proceder a Actualizar"
+          />
+          <img
+            src="imgTodolist/img8.PNG"
+            title="Alerta de tarea actualizada"
+            alt="Alerta de tarea actualizada"
+          />
+          <img
+            src="imgTodolist/img9.PNG"
+            title="Ver registro actualizado en la tabla "
+            alt="Ver registro actualizado en la tabla "
+          />
+          <img
+            src="imgTodolist/img10.PNG"
+            title="Dar clic al botón Eliminar"
+            alt="Dar clic al botón Eliminar"
+          />
+          <img
+            src="imgTodolist/img11.PNG"
+            title="Alerta para validar si se desea eliminar"
+            alt="Alerta para validar si se desea eliminar"
+          />
+          <img
+            src="imgTodolist/img12.PNG"
+            title="Alerta de tarea eliminanda"
+            alt="Alerta de tarea eliminanda"
+          />
+          <img
+            src="imgTodolist/img13.PNG"
+            title="Registro eliminado en la tabla"
+            alt="Registro eliminado en la tabla"
+          />
+          <img
+            src="imgTodolist/img14.PNG"
+            title="Buscar tarea"
+            alt="Buscar tarea"
+          />
+          <img
+            src="imgTodolist/img15.PNG"
+            title="Ver tarea específica en la tabla"
+            alt="Ver tarea específica en la tabla"
+          />
+
+          <div class="controls">
+            <i class="fa-solid fa-chevron-left" id="prev"></i>
+            <i class="fa-solid fa-chevron-right" id="next"></i>
+          </div>
+        </div>
+
+        <div class="image-viewer" id="imageViewer">
+          <i class="fa-solid fa-times close-btn" id="closeViewer"></i>
+          <img src="" alt="Imagen ampliada" id="viewerImage" />
         </div>
 
         <br /><br />
         <p>
-          Esta aplicación de lista de tareas está desarrollada con <strong>Laravel</strong>,
-          proporcionando funcionalidades CRUD para gestionar tareas: <span>Crear, Leer, Actualizar y Eliminar</span>.
+          Esta aplicación de lista de tareas está desarrollada con
+          <strong>Laravel</strong>, proporcionando funcionalidades CRUD para
+          gestionar tareas: <span>Crear, Leer, Actualizar y Eliminar</span>.
         </p>
         <br /><br />
         <h3>Características Principales</h3>
@@ -70,35 +167,79 @@
         <h3>Tecnologías Utilizadas</h3>
         <br />
         <p><strong>Backend:</strong> Laravel, MySQL</p>
-        <p><strong>Frontend:</strong> Blade Templates, HTML5, CSS3, Bootstrap</p>
+        <p>
+          <strong>Frontend:</strong> Blade Templates, HTML5, CSS3, Bootstrap
+        </p>
 
         <br /><br />
         <h3>Pasos para Instalar</h3>
         <br />
-        <p><strong>Instalar Dependencias:</strong> Ejecuta <code>composer install</code></p>
-        <p><strong>Configurar .env:</strong> entra al archivo <code>.env</code> y configura la conexión a la base de datos.</p>
-        <p><strong>Migrar Base de Datos:</strong> Usa <code>php artisan migrate</code> para crear las tablas necesarias.</p>
-        <p><strong>Iniciar Servidor:</strong> Levanta el servidor con <code>php artisan serve</code>.</p>
+        <p>
+          <strong>Instalar Dependencias:</strong> Ejecuta
+          <code>composer install</code>
+        </p>
+        <p>
+          <strong>Configurar .env:</strong> entra al archivo <code>.env</code> y
+          configura la conexión a la base de datos.
+        </p>
+        <p>
+          <strong>Migrar Base de Datos:</strong> Usa
+          <code>php artisan migrate</code> para crear las tablas necesarias.
+        </p>
+        <p>
+          <strong>Iniciar Servidor:</strong> Levanta el servidor con
+          <code>php artisan serve</code>.
+        </p>
 
         <br /><br />
         <h3>Potencial y Usos</h3>
         <br />
         <p>
-          Este sistema puede ser utilizado para una amplia variedad de proyectos, desde la gestión personal de tareas hasta la colaboración en equipo, escalando hacia aplicaciones empresariales más complejas.
+          Este sistema puede ser utilizado para una amplia variedad de
+          proyectos, desde la gestión personal de tareas hasta la colaboración
+          en equipo, escalando hacia aplicaciones empresariales más complejas.
         </p>
 
         <br /><br />
         <h3>Ventajas</h3>
         <br />
-        <p><strong>Optimización del tiempo:</strong> Permite a los usuarios organizar y priorizar tareas de manera eficiente, asegurando que nada importante quede sin atender.</p>
-        <p><strong>Colaboración mejorada:</strong> En un entorno empresarial, el sistema puede usarse para asignar tareas específicas a diferentes miembros del equipo, promoviendo una mejor distribución del trabajo.</p>
-        <p><strong>Seguimiento de progreso:</strong> Ofrece una vista clara del estado de las tareas (completadas, en proceso, pendientes), ideal para gestionar proyectos personales o laborales.</p>
-        <p><strong>Facilidad de uso:</strong> Diseño intuitivo que permite a cualquier usuario, sin importar su nivel técnico, interactuar con el sistema sin problemas.</p>
-        <p><strong>Adaptabilidad:</strong> Desde gestionar listas de compras hasta planificar proyectos complejos, el sistema se adapta a diferentes necesidades y contextos.</p>
-        <p><strong>Centralización de información:</strong> Almacena todas las tareas en un solo lugar, eliminando la necesidad de múltiples herramientas o notas dispersas.</p>
+        <p>
+          <strong>Optimización del tiempo:</strong> Permite a los usuarios
+          organizar y priorizar tareas de manera eficiente, asegurando que nada
+          importante quede sin atender.
+        </p>
+        <p>
+          <strong>Colaboración mejorada:</strong> En un entorno empresarial, el
+          sistema puede usarse para asignar tareas específicas a diferentes
+          miembros del equipo, promoviendo una mejor distribución del trabajo.
+        </p>
+        <p>
+          <strong>Seguimiento de progreso:</strong> Ofrece una vista clara del
+          estado de las tareas (completadas, en proceso, pendientes), ideal para
+          gestionar proyectos personales o laborales.
+        </p>
+        <p>
+          <strong>Facilidad de uso:</strong> Diseño intuitivo que permite a
+          cualquier usuario, sin importar su nivel técnico, interactuar con el
+          sistema sin problemas.
+        </p>
+        <p>
+          <strong>Adaptabilidad:</strong> Desde gestionar listas de compras
+          hasta planificar proyectos complejos, el sistema se adapta a
+          diferentes necesidades y contextos.
+        </p>
+        <p>
+          <strong>Centralización de información:</strong> Almacena todas las
+          tareas en un solo lugar, eliminando la necesidad de múltiples
+          herramientas o notas dispersas.
+        </p>
       </div>
       <div class="github-button-container">
-        <a href="https://github.com/Mastick2607/ToDoList-Laravel.git" target="_blank" class="github-button">
+        <a
+          href="https://github.com/Mastick2607/ToDoList-Laravel.git"
+          target="_blank"
+          class="github-button"
+        >
           Ver en GitHub <i class="fab fa-github"></i>
         </a>
       </div>
@@ -107,10 +248,49 @@
     <!-- footer -->
     <footer>
       <div class="redes">
-        <a class="redes-footer" href="https://www.linkedin.com/in/marlon-stick-cortes-ñustes-baa47b1b4/"
+        <a
+          class="redes-footer"
+          href="https://www.linkedin.com/in/marlon-stick-cortes-ñustes-baa47b1b4/"
           ><i class="fa-brands fa-linkedin-in"></i
         ></a>
       </div>
     </footer>
+
+    <script>
+      const images = document.querySelectorAll(".carousel img");
+      const prevBtn = document.getElementById("prev");
+      const nextBtn = document.getElementById("next");
+      const imageViewer = document.getElementById("imageViewer");
+      const viewerImage = document.getElementById("viewerImage");
+      const closeViewer = document.getElementById("closeViewer");
+      let currentIndex = 0;
+
+      function updateCarousel(index) {
+        images.forEach((img, i) => {
+          img.classList.toggle("active", i === index);
+        });
+      }
+
+      prevBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateCarousel(currentIndex);
+      });
+
+      nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateCarousel(currentIndex);
+      });
+
+      images.forEach((img, index) => {
+        img.addEventListener("click", () => {
+          viewerImage.src = img.src;
+          imageViewer.style.display = "flex";
+        });
+      });
+
+      closeViewer.addEventListener("click", () => {
+        imageViewer.style.display = "none";
+      });
+    </script>
   </body>
 </html>
